@@ -1,0 +1,294 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : MDI_Main_Window
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : MDI parent window
+ subtype : 0
+window :
+ name : MDI_Main_Window
+ identifier : 0x255c35c907e0c0dc
+ internal_properties : CAAAAAgAAAANU+IA2IEXAYR7bj4T9ZT4y5iX5FBxTSdu9bSSSmn70Jh3LmwBLQg4glkx3Mllu1b5xU4r9maAFE618tuBFhMinFolfUMVFuwsZ/SQPFuZFantb9slVXfVF7em8n/xWRZDXtnJyDYFvo1S3eHdPN+7apq4ccWfpSKRtnE9jSnsg7kIb9W34No3hFGYmn4bUoXPaBE0q2gP1VOrIp+JXxb4uap1s8ypw71bUQMC6xXer5RGUPX/FRV04gxQ+7FqGUNy4iHOmnPXGfWWYxiPTdp9Fpa1WFFKAvklJkHE48hMEWnviOl0ft7OYxhBD0ckJ5Um8ewsn3yIROZXmtUF15SVd76Pwl2osLuB4gcUWihUqZud6LWSe/ktW0H0lRTVMfK7rkPkkE0L3ilge3qAEi+qJysHZjPI/PaZuwDnxRNeZV3BcAo1tPeJWD4zntKqAufcy7P+vo0OyXnScOMrkbnd/uWLXrCS78UejsFiB1Qwh1HZBlq/rs7K6ezr/yIwXFf45Wy246+Z3JAaSfnJl9HmeVi4g+DRuw3YQDel2EHg15XL0j1Yc/nI2p6Dka7BqngIAgesFJsmlNiJixx9uykLNo6F6vFJsiSNeGthVOCL1aFxzzfvamK8AEIxTuuNN3jp/xSag6RCSg5Qjy/oKAeK3Ue8fUAJnrmIvFYnKNiP2nCL9N9nffOBS/CQkB1VAMAvYxYBPwlmN0gd6aGPQiBfYhCVhjLzob2DPbjH3Blok4phBQoddmTAdlsVJXJXV5TJTRg7C8Iy+n0rhT2dnvGzIfJWu3Y3pUUj
+ properties :
+  width : 731
+  height : 466
+  widthClient : 729
+  heightClient : 412
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x255c35c907f3c0dc
+  internal_properties : CAAAAAgAAAD7mLdZQF+q7mHdqMKqPikgbZvIRhKHk+XchJDgQDTy7FOYGGV23/0wh7s7b/TCoibreIU8/x5Z7fla0MaeFj6J7UBC50UKdiwA3TiAKmVzVwGzpad6KMQRb0C75C6h1ZNEAQyOigek0gfWxdBFzSM6p9hLR4cY8AbFTyjQuvbjjqNDn4YE8L5kPh8aXCN0rJUnLDvKZs+3ywIduxg+LjFejwWek5UGAvfWAECdPZW+e2kmJTpP+YufHGdsBTvr0EiaO2zw1nTrcNotVRNcgu6VEv+gAvYU1+/QP8miX9u9EOdhZohGVNpr
+  options :
+   -
+     name : Menu
+     identifier : 0x255c35c907f4c0dc
+     internal_properties : CAAAAAgAAACpYsYnCi8PJJCmU8sAzZ95CRx7KRJgPMDQMy6DwKIwgRLju4s4Eb57qpgBK//GCA10CiHNcpIf6dtbdmhq2SRorTIjX8sR4u82ohMUrFVqUhoKflqkDNGairJBKItDltKi7x2sgvvCrVhw3IG6RNog/TQSFqhMWsKazS+djM4TL8uFBF8GWSyVoLI242ofluHSl/hhgc9ryhHFleS5wsdXtpeG5mpuFK4kI4OFbYpEEwwryrNGxxOlpC4BxoTTyaW+iot+2k2+0fMDFvfSpqzbRBzwYHFd4yqaCU9U+9LhsNS9cQUN2AFZhavGBeiKUTdH6tUklH5XKyKHLcd+yswqhvRgGu4=
+     options :
+      -
+        name : List
+        identifier : 0x255c35c907f5c0dc
+        internal_properties : CAAAAAgAAABWwFLHmfKmvVqF9HcoSeKlaZCfM2QAhZCVWN9D0tucH+bTXWT163vzNSBZAW/4vxriEM4bNxdZ7PkWC2P64NHYCPrM+St77NEDnjsP0Lm8ZiAXYe4bmJ6lvRJsu6M8mE1u5h28Jw8Ik8R5T+L53fzDATUU3kQGOnzw2D16LSNtYYzm9maE41O8Oy7+ZEUyPT3EZ3ea6IDHVEp2Rlzsr8/3XVx3wIrvYAdosU5ueZeGtPI9A+VIwbPvwmVruUf5s6sleqkXeFknyHzqV258V+AOomh4eff2tvBrxCUYezWSkfBu6J8CyAQdfbtEAxHXCtCI9LHOKvhovcpM0zjMRl1L7zZHIcpNEd/bFsNORxw4i8NPw33v8Xg5xu+sL+3a
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             // If the main window that lists the customers is not already active
+             IF WinStatus(Win_CustomerTable)=NotFound THEN
+             	gsCustomerAliasList = MDIOpen(Win_CustomerTable)
+             END
+            type : 32
+      -
+        name : New_Customer1
+        identifier : 0x255c35c907f6c0dc
+        internal_properties : CAAAAAgAAABA7aRR/3xnOco7FamQUkcH5KUx0U9gfWbnIMv7uO8O5c5Fdbcdw4Dgmz4/BJ4IWkdLy8LP4GPhVgeUz9Rvc8HmFSa0zVxxMI1MJ55KEMKdkkEjc5MB2lYeFbuhKZuBcJJJVeSsW5ru2OqzFX8WmySn6zdqdZT2B5VDxFZn4ZD1tZaoI5gJCQmXh4JxNTFiryc6uEWvI0JT5JY7ByOKhCdTFHyc0ld8iUrJrtAhOBfKnO+a2arN/KZmFPrxpYCEQko1zKZxBR11ndepOLJtt0R47rbT97TInfP6py5kUBa7hQCHsmv0Mw4Z6e+tp6MUhUB9J2jCuSayerddmg6Os9+tNSU4KYGcHPJxcBLG3QAhHPCyQeiypGhaZHyaBQ==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             // Open the customer form in creation
+             MDIOpen(Win_Customer_Form,"",<§$0001§>,<§$0002§>)
+             
+            type : 32
+      -
+        name : _1
+        identifier : 0x255c35c907f7c0dc
+        internal_properties : CAAAAAgAAADSNjzwns2FkdJPXh3hATKykkeUi7CSM+6KbwkIaEVI4eEGwamJtcFCE1NlVZhGPsrj84Iuj8Gez7STPVhQVkICAZBE4AllvOtiAIW4i0Pwn8EFbnjNFppg7NY2xUa+jRImFhaAaKCWH0fEZD5b4Fql2FY4uapH4gxYlM6R5Gwbh63aB0WwL1RFfWD+aXtBGsHi8IbuXVjvTynpJHpqdoAS+VMYcOXFy/yWdsjsyP61YPueRvm7NyVPzortABPNtJR5j+gBJstYUkhPoHjteXC3JxlknMRIkfhsZxzeie6m/J76XYwkZ9du/aQel6TVIw==
+        code_elements :
+         type_code : 26
+         p_codes : []
+      -
+        name : Exit_
+        identifier : 0x255c35c907f8c0dc
+        internal_properties : CAAAAAgAAAB0LwhBpBN5t8iOBvTvriKbO/P8LY65zC+i7ve+cquVLbJMwjClaiamKnwsqQDCVejRU369QzHA//oR5hntyflACcqH/UTnHLKG39bHYj1N/kQsm8wj+7aRA8RYZysOzEW3TfIKFGsIPHDNHGRj/TC6DciauwjAPo1ryhSpLicHBwDSkG++pwLzNhC5HLYBvkzqSjg2V/Or7Hywxg8NNB3VCPql5RFrN8C4lBFvbQoas4uJu/caJLWmg8JKPAzsHeL3nmtrnnSqgA8Y4w7Z59f7vdHCoW697j2c8USiXhvvEM5fZ7pe5mNu91+jrB27bppQhajRc05aYC4dI9yOWsBkQu22G8YNCJf7fPy/QDtaEst19Q==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             IF InAutomaticTestMode() _OR_ YesNo(No,<§$0000§>)=Yes THEN
+             	EndProgram()
+             END
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+         type : 32
+   -
+     name : Reorganization
+     identifier : 0x255c35c907f9c0dc
+     internal_properties : CAAAAAgAAAC1sH05a2/AKV0i2sHJgSvqCuTgA0OIq+KP8dVhEhEtip6aFK0C64PZo7uQgqI3daMKg9+z/gX4Zc0fJfn1Xh5INxcTi2GUvL9JxbIvHDx+66gkGDv45BS+psgPf+WH5Oe7825HXlIKz3alEXKhyb77rdvcThMUd6uNNz7WpcpTzhwmgA1Gr8ZM5Eq4XYgSwle5HJJ80XxalnuDR01tQJvnrQfd7+58CiYoDR9t64MLTAw11Ryim3mS3vs/1eGGQKacSlxxJCr1qUDtlVWa78rV3vLe2Je7e/D2gnpsvKC9WruebIehnhfkf8201EH36BF/8CWenyVsDwGulseyx9PLY39peGoIXfSc
+     options :
+      -
+        name : Cascade
+        identifier : 0x255c35c907fac0dc
+        internal_properties : CAAAAAgAAADQuGRp502WOTJWflX8M6aAhG5HzIISZnrWAUC6N87Fuzn4yJT8/57uW8GxW8LxzXZQ+WY3aQjkx3SQ8fAG4pWZGSrXRewbpIOnHFpJ2keThr7/mIYvIJ3jQ5vbtBda/kP9iz6APkOUeJSRxldTGNara3LDTzkl5FZJ/86iYn7QyB9E9W2eOJycMePv53nwAhP71KDwuS1oxP7r0tTUMpkZwasJO6r+oAEB8ffLE7JsaW7LNYFOAh/wuluO2bT7R26ez0kFx0qqdv0kxci2I1bhhN3RHkAbeRB5ADsySWhAD6oDTXBAs66i5q1q10XuRhanre99ouGOdmw=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIWindowMenu(mdiCascade)
+            type : 32
+      -
+        name : Tile
+        identifier : 0x255c35c907fbc0dc
+        internal_properties : CAAAAAgAAABkZk/Co+C5rx12D4zNdNyPFIcDNOYJl2GfCsM893ZAX0tv2yxvlaRzRsrlOycRy3lz1GSDFGRKZrOAPlY5gyGy5Vnqsu5d+IbXH3rU2lQ3CgkgQ+ouX+ih7cZTJgijobaYCufSsoOziEHzUUP/qVBsGaLi8i/A4CSMyxuY+ZaCWMsnT8y9umsjSysmmtXyg1ulLM5Kv3ICBxLn79ERMnejyU4ziY+zq9Q4XkEDWU1P+IdtoPAsNhEEnEHb4Han2GznEc0w1axzw/rVR6EGVniWwVML2I9+XAeG7X5TInriv9snohL0NK7onlSwhqD2HfEGC8c=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIWindowMenu(mdiTile)
+            type : 32
+      -
+        name : Horizontal_Tile
+        identifier : 0x255c35c907fcc0dc
+        internal_properties : CAAAAAgAAACxysDkiM0SnDxn8T8Mu+rOBxEh5DF4giXtHfRdcJEGoZVv0JdNRTRd5UZuHxfLaw+IWzJda2J3g281SNqwGSodknfD+40/tcWlieiGrVdGMXpWAZ0x3gA4MWu5uUg22TSUsoOG7D62j7cTqOo3rnTZZbbSt+KmiSILFE5d3xHLS7q0dufnVUuQDRusmrtvB3qcDQmKz2ZTPo8gUfJ/61L/CT5RNwj/R9IR+UwHksoR+UAem18M754bhS1QLYn3OkvA91jkODUsp696F845EdhwqCv6ZPbjds+J65zXKzaGutMUc1GLFYyj5b1ezxk68E1HRwnLCVCDdOklLDpjXyx/gJQ=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIWindowMenu(mdiTileH)
+            type : 32
+      -
+        name : Arrange_Icons
+        identifier : 0x255c35c907fdc0dc
+        internal_properties : CAAAAAgAAAAevtu3gIFVSVm+5urYN++jbFq2lZryPZJ7pyVq6YfOKQ5x1RAD8RMaziVeYxws8Vmi2iPsYa1TJbf24WU9g/xS9jANM+wHBmgKs0EYHAs7xeHwBF0Tb+rucStWtahzIzRn4HoudcyVHyv+x3yuoj6PHAKG5thGrUSXtjn7AqMhsJD2KjuPBeTsdd0kZj88ERvJhUx7mcGpPlTw+b9UMguHQFyw7iVkGs5akshCa8BluS8ObnDXJLO2Vhm8M5ozlNt6+UP4kJBKFIVeLKojxHZorDnKjUVX22hCnlPqY3kTFcs0nOewIEGKBZ5zqrmKLm+9Y4/FEoB1vgkz2BZIe7ZN9wM=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIWindowMenu(mdiArrange)
+            type : 32
+      -
+        name : Iconize_Windows
+        identifier : 0x255c35c907fec0dc
+        internal_properties : CAAAAAgAAABhOo9bniBSzJa/8r8Bsc+qSKk2KS7KZOAtEWHkXIlx06O4/vlsN655d47oXlpHeyDcewa/Ckr19iRGPjRok7hKT0NoKUUUjsTdUpdPJ2X5mXsG1cqIub+WMlaf094uId/B9RGL36Et5LLkhj6vjSIJ+224N5GraBsXMI0vaB9AglIUr7nveV+uF69X5loK90Hhzl2Lh7kk1llOEaxdiaw4bXEws7Cz8L5BBlrUotV0BhyJiIWhxuCTDmI1dadMaVnDM9dynK3FX7Ebb4CzElQfVgnboAxtIwoMrWUJsEh1Whj1rbNFJfIyqSEZLw1zeXfjKxJnfzpMvaRYg1XskaHklndcCw==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIWindowMenu(mdiMinimizeAll)
+            type : 32
+      -
+        name : Restore_Windows
+        identifier : 0x255c35c907ffc0dc
+        internal_properties : CAAAAAgAAAA+g+y6Y0Q6IFR1Du0Ls9WoZlvUXT6CaORE6dF8jElPcdUe/4HOP6MKVi92MoA3X9xEW8J3GhK5riRGHiQEM/y+32u8aYV8ujQNgkeHsx0FXeNmubKAwWNOmq6vI/oWLYPBDe1zb+mhdIrs5nZTndZlyy08x/kTpLOnmK3n7J/EPsJ0kVNt+9EgFdmJsCjkqfcPtP8l5etOwNf4kw6bU0a268eSfcal0qCXCOSucKdWVEKvqtd3qNJFPGyv38XuU1dBqUGsMtf/4Re94SJZPM6VLKcdktpfFQQ6c6XLUODdElCF4YtR0aZetYVV7GRU/ISUVDNMejdVvFeXvBrTuvxBdVajtA==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             MDIWindowMenu(mdiRestoreAll)
+            type : 32
+      -
+        name : Close_All1
+        identifier : 0x255c35c90800c0dc
+        internal_properties : CAAAAAgAAABEkR0pWfCAG0UuVN25bTBD1e0e1RJQ/KEN62pyZSM0V7BSvnG7xf6HnMkm0YlsdhsF6hH2vLyKeTgvo9VzMDuKWuM0r1nGtjqPISnbIX4LAbCJJ9i5gassS2mfWX+/aE63PsK0OFZ76TMbjo+1OiDhqrG5YQJ5dNcBXY6vuLWBgRwhzeMrhuaK3Yky/FFXgHjX8AW6lmIdAu8vqfF8lsuPIc+jau+2Wc5gGlL19U6+4kkkZC7ng0Zhepll3AZH9zElUjXjFTUWsbtzFhRmV1CvZhopIVlMRLblDF9UorP9G1A7Mny2zF92dYHHMzYV90FpBkkVQQJih36m
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             MDIWindowMenu(mdiCloseAll)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+         type : 32
+   -
+     name : MDI_Menu
+     identifier : 0x255c35c90801c0dc
+     internal_properties : CAAAAAgAAAALWYUudjD+BbosH+vFP3SqFcwynFwEcrC7r5TZ1ch8N2b01habhEM6qbRnEuTiWBFVeMPRsIMxwccN0ndzpIytGe9QZLuQb3rHg43knOFD1L+ycDkeek43ZBRRTY+S+lNzAl5zDv8ICZaSLG6qotfFKiiy7xWY61BPRS0NN8z9vfyLvZVWc26Dz3V2W/UE/pB3NXh2DAbvjEvA+LzEJXVz9/25Cq+ZYf3FTUXUZf4OOdlSEw4cMvpt3m33wQq4NlWq9G+Ex0UJBolAqUf6TitKSWARti1+RzbX1y7s85RZjWX0Kqfo0VyQRxyOkUJkIxv6yeDck7U8fDPOhJ2xv/K1Z/wA
+     options :
+      -
+        name : Close_all
+        identifier : 0x255c35c90802c0dc
+        internal_properties : CAAAAAgAAACNEXe5ogB1biHzXPb5eSQb6p75opkOY/jKNcyBuXlX8kKGOk1XDRIPU0FPgSwJ8N7jUqV/eyUdnArFMcsb3K76exdr7tnanceEV38iLGPfX+AWiIaTLxNCDfBH046IeztjDpBElkIO0ZqOlIgXSRE873Vg3sSkxc6QZgfdwBlH+XK2Fytzhc2u0/MOC3yJImrPqbGaln2NJrXfMMSzBv466nsJTM1xlYhrdEB1uR+lOBTT26I98FyQk33kBk+d1TzPW62HXlnALgPJF8pYiYe/V0WnqVqrjJ54ipFJD1bF0rjN8QINQB3rpohSHQhsXoaQmkYPphJkmGWSaV2NcgXWxHe9tXx04OiSDr0yTkwsF7LzJwYi
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             MDIWindowMenu(mdiCloseAll)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+   -
+     name : Option1
+     identifier : 0x255c35c90803c0dc
+     internal_properties : CAAAAAgAAABgCMpN0jlJHrsXT3U8exXe4KZGVYtnwAiRu5HqOWwoPVUi6NNlI32dNn1/boaZR66SO4rJtKkUOZdhUfWcOrc2rqOOURlgdC01UscrmBbjxDfunW9QP1DzHYuAnQixD8hD7MO5Ql2rlINYHnwQPI0DK/7jz8upTvQlTQTEL50/A3wdFuaBSsnSktV/bInPmcU+ojaE7XbXgHLjLm62hNtdCKxixMYm4XjyQCuBKDjAObLDZJwgbp4LCRvuhx50dlaivC0cduUGlzfwwUqlTWWZ/Xh/3FtutA2TuAY5yAHrdr6XnEW7/jOu0AMn2FCXkL3lOm1gBCvexrw=
+     options :
+      -
+        name : Help1
+        identifier : 0x255c35c90804c0dc
+        internal_properties : CAAAAAgAAABN9imia/oRgVpL3Lndb5diD4QtwLkV/mmZIZS9YpSo4rWSWalRbxx1vYvClezJ13raoQaFTmKxkYTBrwACedfvAsGaKcgj7ar5yude4kO/xjkzYpydePqjuWKRC/TzHRHN4y5ziYaajRHP8jT7ELwYL03L+fUL6ZdzFcLwL+aCXHvWI+j2SRCndVL4kKwp7IHCGzViLIsuYP8OQO/Kr0RWexGw3NdNUcNB+rv38OxWP8sIAcCzTxA6dSdnuniE1uztMpur7xCUEbnTIZ2ozcyWAQQUjEu69rfTnuuSWvUMwyQSsD4JnaHsR6WbbYGbGsNg4bxe6g==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             // Help message
+             Info(<§$0004§>,<§$0003§>)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+  code_elements :
+   type_code : 26
+   p_codes :
+    -
+      code : |1-
+       
+      type : 32
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAA8fzWcqTnUKDT+GeSKItBAZIlYmlPnvIG2EzNrwgqP+hhaD6RRWTIG9NMgPx2ejQJq+qmPk4Qs8kcCi00MQ0HDOuQciPp4W74ygXbg9c3jXlG/SNtLHG9aXcEsF10vSQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      GLOBAL 
+      	gsCustomerAliasList is string
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Fenetre_Mere_MDI
+resources :
+ string_res :
+  identifier : 0x3b8b59e611cb7efe
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Do you want to exit this example?
+     index : 0
+   -
+     text :
+      en-GB : Creating a new customer
+     index : 1
+   -
+     text :
+      en-GB : CREATION
+     index : 2
+   -
+     text :
+      en-GB : "Indeed, the method for programming a MDI application differs from the method for programming a modal application. The mdiArrange constant enables you to organize all the opened child windows according to your own requirements (see the documentation for more details)"
+     index : 3
+   -
+     text :
+      en-GB : "This example presents the use of MDIxxx functions. "
+     index : 4
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_MDI_Main_Window.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
